@@ -3,13 +3,13 @@ const playGame = (position) => {
 
      //push the position to the array by using indexof
 
-    let playerOne = {
-        turn: true,
-    }
+    // let playerOne = {
+    //     turn: true,
+    // }
     
-    let playerTwo = {
-        turn: false,
-    } 
+    // let playerTwo = {
+    //     turn: false,
+    // } 
     
     let gameBoard = {
     boardPlayerOne: [0,1,2,3,4,5,6,7,8],
@@ -39,26 +39,26 @@ const playGame = (position) => {
 
 }
 
-//if playerOne is true set x
-// if playerOne is false set o
 
-if (playerOne.turn) {
-    gameBoard.boardPlayerOne[position] = '❌';
-    playerOne.turn = false;
-    playerTwo.turn = true;
-} else if (playerTwo.turn) { { 
-    boardPlayerTwo.board[position] = '⭕';
-    playerOne.turn = true;
-    playerTwo.turn = false;
-}
+
+gameBoard.boardPlayerOne[position] = '❌';
+
+
+
+// if (playerOne.turn) {
+//     gameBoard.boardPlayerOne[position] = '❌';
+//     playerOne.turn = false;
+//     playerTwo.turn = true;
+// } else if (playerTwo.turn) { { 
+//     boardPlayerTwo.board[position] = '⭕';
+//     playerOne.turn = true;
+//     playerTwo.turn = false;
+// }
  
-// if indexof 012 === x  set playerone to win
-// else if indexof 012 === 0 set player two to win
-// if index off all is x or o 
 
 }
 
-}
+
 
 playGame(1);
 
