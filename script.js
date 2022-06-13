@@ -1,7 +1,19 @@
 
 const playGame = (position) => {
 
-const gameBoard = {
+
+     //push the position to the array by using indexof
+
+     
+    let playerOne = {
+        turn: true,
+    }
+    
+    let PlayerTwo = {
+        turn: false,
+    } 
+    
+    const gameBoard = {
     board: [0,1,2,3,4,5,6,7,8],
     emptyboard: [0,1,2,3,4,5,6,7,8],
 
@@ -19,20 +31,9 @@ const gameBoard = {
 
 }
 
-let playerOne = {
-    turn: true,
-}
-
-let PlayerTwo = {
-    turn: false,
-} 
 
 //if playerOne is true set x
 // if playerOne is false set o
-
-
-
-
 
 
 if (playerOne.turn) {
@@ -46,23 +47,12 @@ if (playerOne.turn) {
 // if index off all is x or o 
 
 
-
 }
 
 }
-playGame(0);
-playGame(1);
-playGame(2);
-playGame(3);
-playGame(4);
-playGame(5);
-playGame(6);
-playGame(7);
-playGame(8);
-
 
 //EventTarget.addEventListener("click", function() {
 
     // Do something cool
-
+    playGame(0);
 //}, {once : true});
