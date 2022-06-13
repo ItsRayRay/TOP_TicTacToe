@@ -158,3 +158,22 @@ label {
 .tic {
   font-size: 3em;
 }
+
+
+button {
+    background-color: #867a7a;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #867a7a;
+}
