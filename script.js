@@ -132,6 +132,9 @@ const playGame = (position) => {
       playerOne.turn = false;
       playerTwo.turn = true;
       console.log(gameBoard.boardPlayerOne);
+        
+
+      
   } else if (playerTwo.turn) { {
     gameBoard.boardPlayerTwo[position] = '⭕';
       playerOne.turn = true;
@@ -139,6 +142,5 @@ const playGame = (position) => {
       console.log(gameBoard.boardPlayerTwo);
   }
   
-
 
 }}
