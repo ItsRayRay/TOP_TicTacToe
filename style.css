@@ -71,7 +71,7 @@ label {
   border-radius: 5px;
 }
 
-.div1 {
+.div0 {
   grid-area: 1 / 1 / 2 / 2;
   border-right: solid 1px #867a7a;
   border-bottom: solid 1px #867a7a;
@@ -80,7 +80,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div2 {
+.div1 {
   grid-area: 1 / 2 / 2 / 3;
   border: solid #867a7a 1px;
   border-top: none;
@@ -89,7 +89,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div3 {
+.div2 {
   grid-area: 1 / 3 / 2 / 4;
   border: solid #867a7a 1px;
   border-top: none;
@@ -99,7 +99,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div4 {
+.div3 {
   grid-area: 2 / 1 / 3 / 2;
   border: solid #867a7a 1px;
   border-left:none;
@@ -108,7 +108,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div5 {
+.div4 {
   grid-area: 2 / 2 / 3 / 3;
   border: solid #867a7a 1px;
   display: flex;
@@ -116,7 +116,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div6 {
+.div5 {
   grid-area: 2 / 3 / 3 / 4;
   border: solid #867a7a 1px;
   border-right: none;
@@ -125,7 +125,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div7 {
+.div6 {
   grid-area: 3 / 1 / 4 / 2;
   border: solid #867a7a 1px;
   border-left: none;
@@ -135,7 +135,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div8 {
+.div7 {
   grid-area: 3 / 2 / 4 / 3;
   border: solid #867a7a 1px;
   border-bottom:none;
@@ -144,7 +144,7 @@ label {
   align-items: center;
   justify-content: center;
 }
-.div9 {
+.div8 {
   grid-area: 3 / 3 / 4 / 4;
   border: solid #867a7a 1px;
   border-bottom: none;
