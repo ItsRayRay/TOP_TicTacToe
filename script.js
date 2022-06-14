@@ -12,64 +12,54 @@ let playerTwo = {
 
 let gameBoard = {
     boardOnScreen: ["", "", "", "", "", "", "", "", ""],
-    boardPlayerOne: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-    boardPlayerTwo: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-    winCombinationsPlayerOne: {
-      a: ["❌", "❌", "❌", 3, 4, 5, 6, 7, 8],
-      b: [0, 1, 2, "❌", "❌", "❌", 6, 7, 8],
-      c: [0, 1, 2, 3, 4, 5, "❌", "❌", "❌"],
-      d: ["❌", 1, 2, "❌", 4, 5, "❌", 7, 8],
-      e: [0, "❌", 2, 3, "❌", 5, 6, "❌", 8],
-      f: [0, 1, "❌", 3, 4, "❌", 6, 7, "❌"],
-      g: ["❌", 1, 2, 3, "❌", 5, 6, 7, "❌"],
-      h: [0, 1, "❌", 3, "❌", 5, "❌", 7, 8],
-    },
-    winCombinationsPlayerTwo: {
-      a: ["⭕", "⭕", "⭕", 3, 4, 5, 6, 7, 8],
-      b: [0, 1, 2, "⭕", "⭕", "⭕", 6, 7, 8],
-      c: [0, 1, 2, 3, 4, 5, "⭕", "⭕", "⭕"],
-      d: ["⭕", 1, 2, "⭕", 4, 5, "⭕", 7, 8],
-      e: [0, "⭕", 2, 3, "⭕", 5, 6, "⭕", 8],
-      f: [0, 1, "⭕", 3, 4, "⭕", 6, 7, "⭕"],
-      g: ["⭕", 1, 2, 3, "⭕", 5, 6, 7, "⭕"],
-      h: [0, 1, "⭕", 3, "⭕", 5, "⭕", 7, 8],
-    },
+    winCombinations : {
+      a: [0, 1, 2],
+      b: [3, 4, 5],
+      c: [6, 7, 8],
+      d: [0, 3, 6],
+      e: [1, 4, 7],
+      f: [2, 5, 8],
+      g: [0, 4, 8],
+      h: [2, 4, 6],
+    } 
+    }
 
-  };
+    let winCombo = gameBoard.winCombinations
 
-  let winOne = gameBoard.winCombinationsPlayerOne
-  let winTwo = gameBoard.winCombinationsPlayerTwo
-
+    let playerOneCombo = [];
+    let playerTwoCombo = [];
+    
 const playGame = (position) => {
 
-  
+  // if playeroneCombo has same digits as wincombinations 
+
+ if (playerOneCombo.includes(0, 1 , 2) ) {
+
+  console.log("Player One Wins!")
+}
 
   if (playerOne.turn) {
-      gameBoard.boardPlayerOne[position] = '❌';
-      gameBoard.boardOnScreen[position] = '❌';
+
+      gameBoard.boardOnScreen[position] = "❌";
+      playerOneCombo.push(position);
       playerOne.turn = false;
       playerTwo.turn = true;
-      console.log(gameBoard.boardPlayerOne);
-      console.log(winOne.a)
-      
+      console.log(playerOneCombo);
       for (let i = 0; i < gameBoard.boardOnScreen.length; i++) {
         document.getElementById(i).textContent = gameBoard.boardOnScreen[i];
 
-
        }
-      
-     
-  } else if (playerTwo.turn) { {
-    gameBoard.boardPlayerTwo[position] = '⭕';
+  } else { {
     gameBoard.boardOnScreen[position] = '⭕';
+    playerTwoCombo.push(position);
       playerOne.turn = true;
       playerTwo.turn = false;
-      console.log(gameBoard.boardPlayerTwo);
+      console.log(playerTwoCombo)
       for (let i = 0; i < gameBoard.boardOnScreen.length; i++) {
         document.getElementById(i).textContent = gameBoard.boardOnScreen[i];
        }
   }
-  
-}}
+}
+}
 
 
