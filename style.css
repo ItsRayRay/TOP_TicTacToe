@@ -1,6 +1,6 @@
 body {
-  background-image: url("87540.jpg");
-  background-size: cover;
+  background-image: url("preview.jpg");
+  background-size: repeat;
   font: 1.2em sans-serif;
 }
 
@@ -14,14 +14,14 @@ body {
 }
 
 .container__header {
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(39, 35, 35, 0.5);
+  backdrop-filter: blur(10px);
   border-radius: 10px 10px 0px 0px;
 }
 
 .container__body {
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(39, 35, 35, 0.5);
+  backdrop-filter: blur(10px);
   min-height: 40vh;
   display: flex;
   flex-direction: row;
@@ -31,8 +31,8 @@ body {
 
 .container__footer {
   min-height: 10vh;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(39, 35, 35, 0.5);
+  backdrop-filter: blur(10px);
   border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ label {
 .container__playgrid {
   min-width: 250px;
   min-height: 250px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -177,3 +177,4 @@ button:hover {
     background-color: #ffffff;
     color: #867a7a;
 }
+
